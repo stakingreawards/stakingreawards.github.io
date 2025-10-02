@@ -1,0 +1,146 @@
+{
+  "settings": {
+    "name": "stakingreawards",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      }
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.18",
+    "siteFonts": [],
+    "favicon": "@PROJECT_PATH@/assets/images/staking-rewards-logo.png",
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nSitemap: https://stakingreawards.github.io/sitemap.xml/",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://stakingreawards.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "imageResize": false,
+    "usedWebp": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.18"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Staking Rewards – Earn Passive Income with Crypto in 2025",
+        "meta_descr": "Discover how to earn crypto staking rewards, boost your passive income, and support blockchain networks like Ethereum, Solana, and Cardano.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <a href=\"https://www.stakingrewards.com/\"><img src=\"@PROJECT_PATH@/assets/images/staking-new.png\" alt=\"Staking Rewards\"></a>\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_cid": "uYse86w7Ub",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "image04-0"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#000000",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#000000"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"10\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#ffffff\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#edefeb\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b><a href=\"https://www.stakingrewards.com/\" class=\"text-primary\">Staking Rewards</a> – Earn Passive Income with Crypto in 2025</b></h3>\n          <div class=\"row card-box align-left\">\n            \n            \n            \n            <div class=\"item features-without-image col-12 active\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>What Are <a href=\"https://www.stakingrewards.com/\" class=\"text-primary\">Staking Rewards</a>? A Complete Guide for Beginners</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><br>As the crypto world evolves, more users are looking for ways to earn passive income through blockchain technology. One of the most popular methods is staking — a process that not only supports blockchain networks but also rewards participants for doing so.<br><br>In this article, we’ll explore what staking rewards are, how they work, the factors that affect them, and the risks you should know before diving in.<br><br>🔹 What Are <a href=\"https://www.stakingrewards.com/\" class=\"text-primary\">Staking Rewards</a>?<br><br>Staking rewards are incentives earned by users who participate in staking — the act of locking up a cryptocurrency to help secure a blockchain network that uses Proof of Stake (PoS) or its variants (like Delegated Proof of Stake or Liquid Staking).<br><br>By staking your coins, you contribute to the network’s operations, such as validating transactions or securing consensus, and in return, you earn rewards, typically in the form of more tokens.<br><br>🔹 How Does Staking Work?<br><br>In a Proof of Stake network, validators are chosen to create new blocks and confirm transactions based on how many coins they have staked (and sometimes for how long).<br><br>Here's a simplified step-by-step:<br><br>You lock your tokens in the network (or via a staking platform)<br><br>Your stake is used to help secure and validate the network<br><br>The network rewards you with newly minted tokens or transaction fees<br><br>You receive staking rewards periodically (daily, weekly, etc.)<br><br>🔹 Where Do <a href=\"https://www.stakingrewards.com/\" class=\"text-primary\">Staking Rewards</a> Come From?<br><br>Staking rewards can come from:<br><br>Newly minted tokens (inflationary rewards)<br><br>Transaction fees collected from users<br><br>Penalty redistribution (from slashed or penalized validators)<br><br>The exact source depends on the blockchain protocol. For example:<br><br>Ethereum 2.0 rewards validators with newly issued ETH<br><br>Solana (SOL) and Cardano (ADA) combine inflation and transaction fees<br><br>Cosmos (ATOM) distributes inflation-based rewards<br><br>🔹 Factors That Affect Staking Rewards<br><br>Several variables determine how much you earn from staking:<br><br>Factor\tDescription<br>Network APR\tEach network sets an Annual Percentage Rate (APR) for rewards<br>Amount Staked\tThe more you stake, the higher your potential rewards<br>Validator Performance\tValidators with higher uptime and performance earn more<br>Commission Fees\tSome validators take a percentage of your rewards as a fee<br>Lock-up Period\tSome protocols require you to lock your tokens for a fixed time<br>Inflation Rate\tHigh inflation = higher rewards (but also higher dilution risk)<br>🔹 Types of Staking<br><br>There are different ways to participate in staking depending on your technical skills and risk appetite:<br><br>🧑‍💻 Solo Staking<br><br>You run your own validator node (e.g., Ethereum requires 32 ETH minimum). Full control, but requires technical knowledge and uptime.<br><br>👥 Delegated Staking<br><br>You delegate your tokens to a validator, who does the technical work. You earn a share of rewards, minus commission.<br><br>🌐 Staking-as-a-Service<br><br>Platforms like Lido, Rocket Pool, Binance, or Coinbase offer easy staking with liquid tokens or minimal setup.<br><br>💧 Liquid Staking<br><br>Earn rewards while keeping your assets liquid. You receive a token representing your staked position (e.g., stETH for Ethereum).<br><br>🔹 Pros of <a href=\"https://stakingreawards.github.io/\" class=\"text-primary\">Staking Rewards</a><br><br>✅ Passive Income – Earn regular rewards without active trading<br>✅ Support the Network – Contribute to decentralization and security<br>✅ Low Barrier via Delegation – No need to run your own validator<br>✅ Compound Gains – Some platforms auto-compound rewards<br><br>🔹 Risks of Staking<br><br>⚠️ Slashing – Misbehaving validators can be penalized, costing you some of your stake<br>⚠️ Lock-up Periods – Funds may be locked for days or weeks (illiquidity risk)<br>⚠️ Validator Risk – Poor performance or downtime can reduce rewards<br>⚠️ Market Volatility – Token prices can drop, offsetting your earned rewards<br>⚠️ Centralization – Over-reliance on large validators can harm decentralization<br><br>🔹 Popular Staking Coins &amp; Their Typical APRs (as of 2025)<br>Coin\tNetwork\tTypical APR\tLock-up?<br>ETH\tEthereum 2.0\t3% – 5%\tYes (unbonding period)<br>SOL\tSolana\t6% – 8%\tNo<br>ADA\tCardano\t3% – 5%\tNo<br>ATOM\tCosmos\t15% – 20%\tYes<br>DOT\tPolkadot\t10% – 14%\tYes<br>AVAX\tAvalanche\t7% – 10%\tYes<br><br>📌 Note: APRs fluctuate and may change based on supply, demand, and network performance.<br><br>🔹 How to Start Earning <a href=\"https://stakingreawards.github.io/\" class=\"text-primary\">Staking Rewards</a><br><br>Here’s how to get started in 4 simple steps:<br><br>Choose a blockchain that offers staking (e.g., Ethereum, Solana)<br><br>Decide your method: solo, delegated, liquid, or exchange staking<br><br>Stake your tokens using a wallet or platform (e.g., MetaMask, Lido)<br><br>Monitor performance and claim or reinvest rewards<br><br>🔹 Final Thoughts<br><br>Staking rewards offer a compelling way to earn passive income in the crypto world while contributing to blockchain security. Whether you're a beginner using an exchange or a seasoned validator running a node, staking offers both financial and philosophical value.<br><br>However, always assess risks, lock-up periods, and validator performance before committing your assets. With the right approach, staking can be a powerful addition to your crypto strategy.<br><br>🧭 Resources<br><br><a href=\"https://ethereum.org/en/staking/\" class=\"text-primary\">Ethereum Staking Portal</a><br><br><a href=\"https://stakingreawards.github.io/\" class=\"text-primary\">Staking Rewards</a>&nbsp;<br><br><a href=\"https://lido.fi/\" class=\"text-primary\">Lido Liquid Staking</a><br><br><a href=\"https://rocketpool.net/\" class=\"text-primary\">Rocket Pool</a></p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_cid": "uYse8FBbaQ",
+          "_anchor": "article07-1",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
